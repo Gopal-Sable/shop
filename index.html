@@ -10,7 +10,18 @@
 <body>
     <header>
         <ul>
-            ---
+            <input aria-hidden="true" type="checkbox" id="menustate" />
+            <nav>
+              <label for="menustate">
+                <span class="open">≡</span>
+                <span class="close">×</span>
+              </label>
+              <ul>
+                <li>Home</li>
+                <li>Contact</li>
+                <li>About</li>
+              </ul>
+            </nav>
         </ul>
         <div class="logo">
             <h1>
@@ -23,35 +34,36 @@
     </header>
     <main>
         <div class="card">
-            <a href="#" style="background-image: url('https://shop.polymer-project.org/esm-bundled/images/mens_outerwear.jpg')" class="image-holder"></a>
-            <!-- <img src="https://shop.polymer-project.org/esm-bundled/images/mens_outerwear.jpg" alt=""> -->
-            <p>Men's Outwear</p>
+            <a href="#" class="image-holder">
+                <img src="https://shop.polymer-project.org/esm-bundled/images/mens_outerwear.jpg" alt="">
+            </a>
+            <h2>Men's Outerwear</h2>
             <button> SHOP NOW</button>
         </div>
         <div class="card">
-            <!-- <img src="https://shop.polymer-project.org/esm-bundled/images/ladies_outerwear.jpg" alt=""> -->
-            <a href="#" style="background-image: url('https://shop.polymer-project.org/esm-bundled/images/ladies_outerwear.jpg')" class="image-holder"></a>
-            <p>Ladies's Outwear</p>
+            <a href="">
+                <img src="https://shop.polymer-project.org/esm-bundled/images/ladies_outerwear.jpg" alt="">
+            </a>
+            <h2>Ladies Outerwear</h2>
             <button> SHOP NOW</button>
         </div>
         <div class="t-shirt-container">
             
             <div class="card">
-                <a href="#" style="background-image: url('https://shop.polymer-project.org/esm-bundled/images/mens_tshirts.jpg');" class="image-holder"></a>
-                <!-- <img src="https://shop.polymer-project.org/esm-bundled/images/mens_tshirts.jpg" alt=""> -->
-                <p>Men's T-Shirts</p>
+                <a href="#" ><img src='https://shop.polymer-project.org/esm-bundled/images/mens_tshirts.jpg' class="image-holder"></a>
+                
+                <h2>Men's T-Shirts</h2>
                 <button> SHOP NOW</button>
             </div>
             <div class="card">
-                <a href="#" style="background-image: url('https://shop.polymer-project.org/esm-bundled/images/ladies_tshirts.jpg')" class="image-holder"></a>
-                <!-- <img src="https://shop.polymer-project.org/esm-bundled/images/ladies_tshirts.jpg" alt=""> -->
-                <p>Ladies's T-Shirts</p>
+                <a href="#" ><img src='https://shop.polymer-project.org/esm-bundled/images/ladies_tshirts.jpg' class="image-holder"></a>
+             <h2>Ladies T-Shirts</h2>
                 <button> SHOP NOW</button>
             </div>
         </div>
     </main>
     <footer>
-        <p>made by polymer</p>
+        <p href="#">Made by Polymer</p>
         <button>DEMO ONLY</button>
     </footer>
 </body>
