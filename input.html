@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="input.css"> -->
+</head>
+<body>
+    <style>
+        body{
+            font-size: 18px;
+        }
+        .input-group{
+            position: relative;
+            margin-bottom: 1em;
+        }
+        input{
+            border:none;
+            border-bottom: 1px solid #363535;
+            outline: none;
+        }
+        label{
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: flex;
+            align-items: center;
+            cursor: text;
+        }
+        input,label{
+            width: 100%;
+            height: 50px;
+        }
+        input:focus + label , input:not(:placeholder-shown) + label{
+            color: black;
+            font-size: .75em;
+            top:-25px;
+        }
+    </style>
+    <div class="input-group">
+        <input  name="email" id="email" type="email" placeholder="" >
+        <label for="email">email</label>
+    </div>
+    <div class="input-group">
+        <input  name="Phone" id="Phone"  type="text" required>
+        <label for="Phone">Phone</label>
+    </div>
+</body>
+</html>

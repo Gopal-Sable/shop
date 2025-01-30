@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <header>
+            <img src="src/icon-menu.svg" id="menu-icon" alt="">
+        
+            <!-- <input aria-hidden="true" type="checkbox" id="menustate" /> -->
+            <nav>
+                <label for="menustate">
+                    <span class="open">≡</span>
+                    <span class="close">×</span>
+                </label>
+                <ul>
+                    <li>Home</li>
+                    <li>Contact</li>
+                    <li>About</li>
+                </ul>
+            </nav>
+        <div class="logo">
+            <h1>
+                <a href="#" href="index.html">SHOP</a>
+            </h1>
+        </div>
+        <div class="cart">
+            <!-- <img src="src/icon-cart.svg" alt="shopping-cart"> -->
+            <!-- <span class="badge">1</span> -->
+        </div>
+    </header>
+    <form class="item-conatainer">
+        <div class="form-heading">
+            <h1>Checkout</h1>
+            <p>Shop is a demo app - form data will not be sent</p>
+        </div>
+        <div class="address-section">
+            <h3>Account Information</h3>
+
+            
+            <div class="input-group">
+                
+                <input type="email" id="email" name="email" required placeholder="">
+                <label for="email">Email</label>
+            </div>
+            <div class="input-group">
+                <input type="number" id="phone" name="phone" placeholder="" >
+                <label for="phone">Phone Number</label>
+            </div>
+            <h3>Shipping Address</h3>
+            <div class="input-group">
+                <input type="text"  id="shipping-address" name="shipping-address" placeholder="" required> 
+                <label for="shipping-address"> Address</label>
+            </div>
+            <div class="input-group">
+                <input type="text"  id="shipping-city" name="shipping-city" placeholder="" >
+                <label for="shipping-city">City</label>
+            </div>
+            <div class="input-container">
+                <div class="input-group">
+                    <input type="text"  id="shipping-state" name="shipping-state" placeholder="">
+                    <label for="shipping-state">State/Province</label>
+                </div>
+                <div class="input-group">
+                    <input type="number"  id="shipping-zipCode" name="shipping-zipCode" placeholder="">
+                    <label for="shipping-zipCode">Zip/Postal Code</label> 
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="shipping-country">Country</label>
+                
+                <select name="shipping-country" id="shipping-country">
+                    <option value="United State">United State</option>
+                    <option value="Canada">Canada</option>
+                </select>
+            </div>
+            <!-- Billing address -->
+            <h3>Billing Address</h3>
+            <div class="input-group">
+                <input type="checkbox" name="billingAddress" id="billingAddress">
+                <label for="billingAddress">Use different billing address</label>
+            </div>
+        <div style="display: none;">
+            
+            <input type="text"  id="billingAddress" name="billingAddress" placeholder="Address">
+            <input type="text"  id="billingCity" name="billingCity" placeholder="City">
+            <div class="input-container">
+                <input type="text"  id="billingState" name="billingState" placeholder="State/Province">
+                <input type="number"  id="billing-zipCode" name="billing-zipCode" placeholder="Zip/Postal Code">
+            </div>
+            <div>
+                <label for="billing-country">Country</label>
+                <select name="billing-country" id="billing-country">
+                    <option value="United State">United State</option>
+                    <option value="Canada">Canada</option>
+                </select>
+            </div>
+            
+        </div>
+    
+        </div>
+        <div class="bill-section">
+            <h3>Payment Method</h3>
+            <div class="input-group">
+                <input type="text" name="card-holder" id="card-holder" placeholder="">
+                <label for="card-holder">Cardholder Name</label>
+            </div>
+            <div class="input-group">
+                <input type="number" name="card-number" id="card-number" placeholder="">
+                <label for="card-number">Card Number</label>
+            </div>
+            <div class="input-group">
+<label for="">Expiry</label>
+                <div class="expiry">              
+                    <select id="month">
+                        <option value="January">January</option>
+                        <option value="February">February</option>
+                        <option value="March">March</option>
+                        <option value="April">April</option>
+                        <option value="May">May</option>
+                        <option value="June">June</option>
+                        <option value="July">July</option>
+                        <option value="August">August</option>
+                        <option value="September">September</option>
+                        <option value="October">October</option>
+                        <option value="November">November</option>
+                        <option value="December">December</option>
+                    </select>
+                    <select id="year">
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                    </select>
+                    <input type="number" name="cvv" id="cvv" placeholder="">
+
+                <label for="cvv">CVV</label>
+                </div>
+            </div>
+            <div class="order-summery">
+                <h3>Order Summery</h3>
+                <div class="items">
+                    <p> Men's Tech Shell Full-Zip</p> <span>&dollar; 50.20</span>
+                </div>
+                <div class="items">
+                    <p> Recycled Plastic Bottle Hoodie - Green</p> <span>&dollar; 60.95</span>
+                </div>
+
+                <div class="total">
+                    <p>Total</p> <span>&dollar; 111.15</span>
+                </div>
+            </div>
+            <button class="add-to-cart">
+                PLACE ORDER
+            </button>
+        </div>
+
+        
+
+    </form>
+        
+        <footer>
+            <p href="#">Made by Polymer</p>
+            <button>DEMO ONLY</button>
+        </footer>
+</body>
+
+</html>
