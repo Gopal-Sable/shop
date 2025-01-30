@@ -72,8 +72,8 @@
                     <label for="shipping-zipCode">Zip/Postal Code</label> 
                 </div>
             </div>
-            <div class="input-group">
-                <label for="shipping-country">Country</label>
+            <div >
+                <label id="country-label" for="shipping-country">Country</label>
                 
                 <select name="shipping-country" id="shipping-country">
                     <option value="United State">United State</option>
@@ -82,9 +82,9 @@
             </div>
             <!-- Billing address -->
             <h3>Billing Address</h3>
-            <div class="input-group">
-                <input type="checkbox" name="billingAddress" id="billingAddress">
-                <label for="billingAddress">Use different billing address</label>
+            <div class="checkbox-group">
+                <input type="checkbox" name="billing-address-check" id="billing-address-check">
+                <label for="billing-address-check" id="bill-check">Use different billing address</label>
             </div>
         <div style="display: none;">
             
@@ -115,8 +115,8 @@
                 <input type="number" name="card-number" id="card-number" placeholder="">
                 <label for="card-number">Card Number</label>
             </div>
-            <div class="input-group">
-<label for="">Expiry</label>
+            <div class="expiry-container">
+            <label id="expiry-lable" for="">Expiry</label>
                 <div class="expiry">              
                     <select id="month">
                         <option value="January">January</option>
@@ -145,13 +145,14 @@
                         <option value="2025">2025</option>
                         <option value="2026">2026</option>
                     </select>
-                    <input type="number" name="cvv" id="cvv" placeholder="">
-
-                <label for="cvv">CVV</label>
+                    <div class="input-group">
+                        <input type="number" name="cvv" id="cvv" placeholder="">
+                        <label for="cvv">CVV</label>
+                    </div>
                 </div>
             </div>
             <div class="order-summery">
-                <h3>Order Summery</h3>
+                <h3 >Order Summery</h3>
                 <div class="items">
                     <p> Men's Tech Shell Full-Zip</p> <span>&dollar; 50.20</span>
                 </div>
@@ -163,7 +164,7 @@
                     <p>Total</p> <span>&dollar; 111.15</span>
                 </div>
             </div>
-            <button class="add-to-cart">
+            <button class="order-btn">
                 PLACE ORDER
             </button>
         </div>
