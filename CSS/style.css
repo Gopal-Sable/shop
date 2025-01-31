@@ -17,9 +17,12 @@ body{
 }
 
    header {
+    position: sticky;
+    top: 0;
     background-color: white;
     padding-left: 15px;
     padding-right: 15px;
+    z-index: 1;
   }
   
   header nav {
@@ -53,7 +56,21 @@ body{
   .upper-border {
     margin-top: 6px;
   }
-  
+  .badge{
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        width: 20px;
+        height: 20px;
+        background-color: #172C50;;
+        border-radius: 50%;
+        color: white;
+        font-size: 12px;
+        font-weight: 500;
+        padding: 5px 7px;
+        pointer-events: none;
+        
+  }
   .lower-border {
     margin-bottom: 6px;
   }
@@ -68,7 +85,7 @@ body{
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 4.8px;
-    color: #202020;
+    color: var(--primary-color);
   }
   
   header img {
@@ -176,7 +193,7 @@ main{
 }
 .listing-card .price, span{
     text-align: center;
-    color: #757575;
+    color: var(--secondary-color);
 }
 /* item  */
 
@@ -234,7 +251,7 @@ select{
 }
 .selector-label{
     position: absolute;
-    left: 30px;
+    /* left: 30px; */
     top: 500;
     pointer-events: none;
     margin-top: 20px;
@@ -348,7 +365,7 @@ input:focus{
 .expiry select{
     padding: 0;
     margin-right: 5px;
-    width:80%
+    width:50%
 }
 #expiry-lable{
     position: unset;
@@ -376,21 +393,14 @@ input:focus{
 input[type='checkbox']{
     height: 18px;
     width: 18px;
-    background-color: var(--primary-color);
-    color: var(--primary-color);
-}
-input[type="checkbox"]:checked {
-
-    background-color: var(--primary-color);
-    color: var(--primary-color);
+    accent-color: var(--primary-color);
 }
 
 #bill-check{
-    position: unset;
+    position: relative;
+    top: -15%;
     display: inline;
     font-size: 13px;
-    align-self: center;
-    text-align: center;
     margin:0 0 0 12px;
 
 }
@@ -452,6 +462,7 @@ padding-left:0 ;
 .cart-item-size, .cart-item-price{
     width: 60px;
     text-align: right;
+    margin-top: 5px;
 }
 
 .cart-details{
@@ -477,9 +488,8 @@ padding-left:0 ;
     border: none;
     color: var(--primary-color);
     font-weight: 500;
-    padding: 0 5px;
+    padding: 0;
 }
-
 
 .cart-total{
     align-self: flex-end;
@@ -490,13 +500,13 @@ padding-left:0 ;
 }
 .cart-total span{
     color: var(--primary-color);
-    margin-left: 24px;
+    margin: 24px;
    
 }
 
 .item-close-btn{
     position: relative;
-    right: 25px;
+    right: 20px;
     top:15px;
     width: 10px;
 
@@ -546,10 +556,8 @@ padding-left:0 ;
     }
     .selector-label{
         position: absolute;
-        left: 47%;
-        top: 400;
+        left:auto;
         pointer-events: none;
-        margin-top: 10px;
     }
     .list-cover img{
         display: block;
@@ -590,25 +598,25 @@ padding-left:0 ;
         margin-top: 40px;
     }
 
-    .cart-details{
-        flex-direction: row;
-        flex-wrap: nowrap;
-    }
-    .cart-info div{
-        width:100px;
-        margin-top: 15px;
-    }
-    .cart-item-size{ margin-top: 25px;}
 
-    .cart-item-price{
-        /* width: 100px; */
-        margin:40px ;
+    .cart-item-name{
+        align-content: center;
+        margin: 0 60px 0 0;
     }
-   
+    .cart-info{
+        width: calc(100% - 300px);
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+    }
+    .cart-total span{
+        margin:0 64px 0 24px;
+    }
+  
   .item-close-btn{
         right: 25px;
-        bottom: 3px;
+        top: 30px;
             
-    }
+    } 
     
 }  
