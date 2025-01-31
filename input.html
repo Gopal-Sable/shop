@@ -39,12 +39,11 @@
         }
         
         #country-label{
-            position: relative;
-    left: 0px;
-    /* top: px; */
-    line-height: 16px;
-    /* color: var(--app-secondary-color); */
-    pointer-events: none;
+            position: absolute;
+            left: 0px;
+            top: 150px;
+          line-height: 16px;
+            pointer-events: none;
         }
         select{
             width: 100%;
@@ -54,6 +53,9 @@
             border-bottom: 1px solid black;
             outline: none;
             padding: 15px 0 15px 100px;
+        }
+        #country2{
+            border-top: none;
         }
     </style>
     <div class="input-group">
@@ -78,6 +80,19 @@
             <option value="8">8</option>
         </select>
     </div>
+    <div class="">
+        <label for="country" id="country-label">country</label>
+        <select name="country" id="country2">
+            <option value="1">1</option>
 
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+        </select>
+    </div>
 </body>
 </html>
