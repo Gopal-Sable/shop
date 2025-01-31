@@ -32,14 +32,20 @@
             <h2>Your Cart</h2>
             <p>(2 items)</p>
         </div>
-        <div class="cart-items-list">
-            <div class="cart-items">
-                <img src="src/ladies-outwear/1.jpg" alt="">
-                <div>
-                    <h4 class="name">Ladies Modern Stretch Full Zip</h4>
-                    <div class="cart-details">
+        <div class="container">
+            <div class="cart-heading">
+                
+            </div>
+            <div class="cart-item">
+    
+                <img class="cart-item-img" src="src/ladies-outwear/1.jpg" alt="">
+                <div class="cart-details">
+                    <div class="cart-item-name">
+                        ladies Modern Stretch Full zip
+                    </div>
+                    <div class="cart-info">
                         <div class="item-qnty">
-                            <label for="Qty">Qty:</label>
+                            <label class="item-qty-label"  for="Qty">Qty:</label>
                             <select name="Qty" id="Qty">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -48,26 +54,31 @@
                                 <option value="5">5</option>
                             </select>
                         </div>
-                        <div class="item-size">
-                            Size: <span>M</span>
+                        <div class="cart-item-size">
+                            <label for="">Size:</label>
+                             <span>M</span>
                         </div>
-                        <div class="item-price">
+                        <div class="cart-item-price">
                             &dollar; 41.60
+                            
                         </div>
-                        <!-- <div class="cart-delete">
-                    <img src="" alt="">
-                 </div> -->
                     </div>
                 </div>
+                <div class="item-close-btn">
+                    <img src="src/close-icon.svg" alt="">
+                </div>
             </div>
-            <div class="cart-items">
-                <img src="src/ladies-outwear/1.jpg" alt="">
-                <div>
-                    <h4 class="name">
-                        Ladies Colorblock Wind Jacket</h4>
-                    <div class="cart-details">
+    
+            <div class="cart-item">
+    
+                <img class="cart-item-img" src="src/ladies-outwear/2.jpg" alt="">
+                <div class="cart-details">
+                    <div class="cart-item-name">
+                        Ladies Colorblock Wind Jacket
+                    </div>
+                    <div class="cart-info">
                         <div class="item-qnty">
-                            <label for="Qty">Qty:</label>
+                            <label class="item-qty-label" for="Qty">Qty:</label>
                             <select name="Qty" id="Qty">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -76,23 +87,28 @@
                                 <option value="5">5</option>
                             </select>
                         </div>
-                        <div class="item-size">
+                        <div class="cart-item-size">
                             Size: <span>M</span>
                         </div>
-                        <div class="item-price">
+                        <div class="cart-item-price">
                             &dollar; 45.90
                         </div>
-                        <!-- <div class="cart-delete">
-                    <img src="" alt="">
-                 </div> -->
                     </div>
                 </div>
+                <div class="item-close-btn">
+                    <img src="src/close-icon.svg" alt="">
+                </div>
             </div>
-
+            <div class="cart-total">
+                Total <span>&dollar; 87.50</span>
+                <button class="order-btn">
+                    CHECKOUT
+                </button>
+            </div>
         </div>
-        <div class="cart-total">
-            Total <span>&dollar; 100</span>
-        </div>
+        
+        
+       
     </section>
     <footer></footer>
 </body>

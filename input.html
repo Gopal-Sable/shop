@@ -8,91 +8,72 @@
 </head>
 <body>
     <style>
-        body{
-            font-size: 18px;
-        }
-        .input-group{
-            position: relative;
-            margin-bottom: 1em;
-        }
-        input{
-            border:none;
-            border-bottom: 1px solid #363535;
-            outline: none;
-        }
-        label{
-            position: absolute;
-            left: 0;
-            top: 0;
-            display: flex;
-            align-items: center;
-            cursor: text;
-        }
-        input,label{
-            width: 100%;
-            height: 50px;
-        }
-        input:focus + label , input:not(:placeholder-shown) + label{
-            color: black;
-            font-size: .75em;
-            top:-25px;
-        }
         
-        #country-label{
-            position: absolute;
-            left: 0px;
-            top: 150px;
-          line-height: 16px;
-            pointer-events: none;
-        }
-        select{
-            width: 100%;
-            border: none;
-            background-color:white;
-            border-top: 1px solid black;
-            border-bottom: 1px solid black;
-            outline: none;
-            padding: 15px 0 15px 100px;
-        }
-        #country2{
-            border-top: none;
-        }
     </style>
-    <div class="input-group">
-        <input  name="email" id="email" type="email" placeholder="" >
-        <label for="email">email</label>
-    </div>
-    <div class="input-group">
-        <input  name="Phone" id="Phone"  type="text" required>
-        <label for="Phone">Phone</label>
-    </div>
-    <div class="">
-        <label for="country" id="country-label">country</label>
-        <select name="country" id="country">
-            <option value="1">1</option>
+    <div class="container">
+        <div class="cart-heading">
+            <p>ksadlkjl</p>
+            <span>dads</span>
+        </div>
+        <div class="cart-item">
 
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-        </select>
-    </div>
-    <div class="">
-        <label for="country" id="country-label">country</label>
-        <select name="country" id="country2">
-            <option value="1">1</option>
+            <img class="cart-item-img" src="src/ladies-outwear/1.jpg" alt="">
+            <div class="details">
+                <div class="cart-item-name">
+                    fkhsdkhjkdfsgk
+                </div>
+                <div class="cart-info">
+                    <div class="item-qnty">
+                        <label for="Qty">Qty:</label>
+                        <select name="Qty" id="Qty">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="cart-item-size">
+                        Size: <span>M</span>
+                    </div>
+                    <div class="cart-item-price">
+                        &dollar; 41.60
+                    </div>
+                </div>
+            </div>
+        </div>
 
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-        </select>
+        <div class="cart-item">
+
+            <img class="cart-item-img" src="src/ladies-outwear/1.jpg" alt="">
+            <div class="details">
+                <div class="cart-item-name">
+                    fkhsdkhjkdfsgk
+                </div>
+                <div class="cart-info">
+                    <div class="item-qnty">
+                        <label for="Qty">Qty:</label>
+                        <select name="Qty" id="Qty">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="cart-item-size">
+                        Size: <span>M</span>
+                    </div>
+                    <div class="cart-item-price">
+                        &dollar; 41.60
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart-total">
+            Total <span>&dollar; 100.3</span>
+            <button> checkbox</button>
+        </div>
     </div>
 </body>
 </html>
