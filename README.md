@@ -1,6 +1,7 @@
 # shop
-- This is only demo project.
-- Their is no linking 
+
+- Their is no linking in between pages.
+
 
 
 ### links
